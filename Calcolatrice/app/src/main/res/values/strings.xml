@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Calcolatrice</string>
-    <string name="calc_test">1234.67</string>
+    <string name="calc_test">0</string>
     <string name="btn1">1</string>
     <string name="btn2">2</string>
     <string name="btn3">3</string>
@@ -16,6 +16,6 @@
     <string name="btnDivisione">/</string>
     <string name="btnSomma">+</string>
     <string name="btnSottrazione">-</string>
-    <string name="btnClear">Cancella</string>
+    <string name="btnClear">Clr</string>
     <string name="btnUguale">=</string>
 </resources>

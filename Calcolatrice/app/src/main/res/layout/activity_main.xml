@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/calcLed"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="@color/displayCalc"
         android:padding="10dp"
         android:textSize="48sp"
-        android:text="@string/calc_test"
         android:gravity="end|center_vertical|bottom"
         android:ems="10"
         android:maxLength="12" />
@@ -166,9 +166,11 @@
             android:layout_weight="1"
             android:onClick="onOperator"
             android:backgroundTint="@color/colorOperation"
-            android:text="@string/btnMoltiplicazione" />
+            android:text="@string/btnSottrazione" />
 
     </LinearLayout>
+
+
 
     <LinearLayout
         android:id="@+id/llFour"
@@ -178,11 +180,12 @@
         android:orientation="horizontal">
 
         <Button
+            android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:id="@+id/btnDot"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:onClick="onPunto"
             android:backgroundTint="@color/btnColor"
             android:text="@string/btnPunto" />
@@ -192,7 +195,7 @@
             android:id="@+id/btnZero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:onClick="onDigit"
             android:backgroundTint="@color/colorPunto"
             android:text="@string/btn0" />
@@ -206,6 +209,16 @@
             android:onClick="onClear"
             android:backgroundTint="@color/colorCancella"
             android:text="@string/btnClear" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onOperator"
+            android:backgroundTint="@color/colorOperation"
+            android:text="@string/btnSomma" />
 
     </LinearLayout>
 
